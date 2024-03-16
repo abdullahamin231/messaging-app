@@ -1,7 +1,7 @@
 # messaging-app
 
 
-[![My Skills](https://skillicons.dev/icons?i=html,tailwind,mongodb,express,react,node)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=tailwind,mongodb,express,react,node)](https://skillicons.dev)
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/i0BmRc4yxlM/0.jpg)](https://www.youtube.com/watch?v=i0BmRc4yxlM)
 
