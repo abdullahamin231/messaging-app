@@ -1,0 +1,18 @@
+extends layout 
+block content 
+    h1 Sign Up
+    form(method="POST" action="/users/signup")
+        div 
+        label(for="username") Name:
+        input(type="text" id="username" name="username" required)
+        div
+        label(for="email") Email:
+        input(type="email" id="email" name="email" required)
+        div
+        label(for="password") Password:
+        input(type="password" id="password" name="password" required)
+        div
+        input(type="submit" value="Sign Up")
+    p Already have an account? 
+        a(href="/users/login") Log In
+    

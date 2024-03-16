@@ -1,0 +1,16 @@
+extends layout 
+block content 
+    h1 #{user.username}
+    if !chats 
+        p You have no chats with anyone! 
+    else
+        p All your chats:
+        each chat in chats
+            ul 
+                a(href=chat.url) Chat
+    
+        a(href="/users") Find people to chat with!
+
+
+
+    

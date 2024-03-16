@@ -1,0 +1,95 @@
+#root{
+  margin: 0;
+  background-color: #fafcfc;
+  min-height: 100vh;
+  overflow: hidden;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+.magic { 
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg width=%222000%22 height=%221000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3ClinearGradient id=%22a%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%23bbc8fe%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23ccd5fe%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient id=%22b%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%238da1fd%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23a9b8fd%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient id=%22c%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%235a77fc%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%238399fc%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Cpath fill=%22%23e3edff%22 d=%22M0 0h2000v1000H0z%22%2F%3E%3Cpath d=%22M0 250c104.224 40.336 208.448 80.672 310 60 101.552-20.672 200.43-102.352 292-121 91.57-18.648 175.83 25.735 274 49 98.17 23.265 210.252 25.411 300 14 89.748-11.411 157.163-36.38 236-47 78.837-10.62 169.096-6.891 269 3s209.452 25.946 359 42l-40 750H0Z%22 fill=%22url(%23a)%22%2F%3E%3Cpath d=%22M0 500c77.954 19.137 155.907 38.274 261 29 105.093-9.274 237.325-46.96 331-63 93.675-16.04 148.791-10.436 229-8s185.51 1.705 289 23c103.49 21.295 205.17 64.618 305 60 99.83-4.618 197.808-57.177 295-72 97.192-14.823 193.596 8.088 330 31l-40 500H0Z%22 fill=%22url(%23b)%22%2F%3E%3Cpath d=%22M0 750c92.352 16.47 184.704 32.939 289 19 104.296-13.939 220.536-58.285 316-81 95.464-22.715 170.152-23.8 249 2 78.848 25.8 161.856 78.482 261 80 99.144 1.518 214.423-48.13 308-65 93.577-16.87 165.45-.963 258 12 92.55 12.963 205.775 22.981 359 33l-40 250H0Z%22 fill=%22url(%23c)%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.login { 
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg width=%222000%22 height=%221000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3ClinearGradient id=%22a%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%23b2c2ff%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23c5d1ff%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient id=%22b%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%238196ff%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23a0b0ff%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient id=%22c%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%23b2c2ff%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23c5d1ff%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient id=%22d%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%23e3edff%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23eaf1ff%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Cpath fill=%22%23e3edff%22 d=%22M0 0h2000v1000H0z%22%2F%3E%3Cpath d=%22M0 200c103.421 4.028 206.842 8.056 320 6 113.158-2.056 236.053-10.197 350-12 113.947-1.803 218.947 2.732 330 7s228.158 8.268 335 12c106.842 3.732 203.419 7.197 329 1 125.581-6.197 280.166-22.056 341-26 60.834-3.944 27.917 4.028 35 12l-40 800H0Z%22 fill=%22url(%23a)%22%2F%3E%3Cpath d=%22M0 400c114.915-7.78 229.83-15.559 343-15 113.17.559 224.592 9.456 335 14 110.408 4.544 219.8 4.734 333 2 113.2-2.734 230.208-8.393 334-6 103.792 2.393 194.367 12.836 319 16 124.633 3.164 283.324-.953 345-4 61.676-3.047 26.338-5.023 31-7l-40 600H0Z%22 fill=%22url(%23b)%22%2F%3E%3Cpath d=%22M0 600c116.281 7.863 232.562 15.725 343 14 110.438-1.725 215.031-13.038 321-13 105.969.038 213.312 11.427 324 12 110.688.573 224.72-9.671 333-12 108.28-2.329 210.806 3.258 341 5s288.055-.36 349-2c60.945-1.64 24.972-2.82 29-4l-40 400H0Z%22 fill=%22url(%23c)%22%2F%3E%3Cpath d=%22M0 800c118.798-8.156 237.596-16.312 344-12 106.404 4.312 200.415 21.092 311 24 110.585 2.908 237.745-8.055 354-9 116.255-.945 221.604 8.128 328 7 106.396-1.128 213.837-12.458 337-14 123.163-1.542 262.046 6.702 319 9 56.954 2.298 31.977-1.351 47-5l-40 200H0Z%22 fill=%22url(%23d)%22%2F%3E%3C%2Fsvg%3E");
+}
+
+
+
+#user{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+
+#peruser{
+    width: 100%;
+    height: 100%;
+    background-size: coverr;
+    background-position: center center;
+    background-repeat: repeat;
+    background-image: url("data:image/svg+xml;utf8,%3Csvg width=%222000%22 height=%221400%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3ClinearGradient id=%22a%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%239fa0fe%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23b7b7fe%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient id=%22b%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%23cdcfff%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23d9dbff%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient id=%22c%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%23ddd8ff%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23e5e1ff%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient id=%22d%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%23a599ff%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23bbb2ff%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Cpath fill=%22%237e70fa%22 d=%22M0 0h2000v1400H0z%22%2F%3E%3Cpath d=%22M0 280c117.073-16.429 234.147-32.857 339-34 104.853-1.143 197.486 13.001 306 15 108.514 1.999 232.908-8.147 356-2 123.092 6.147 244.88 28.586 343 32 98.12 3.414 172.57-12.196 299-12 126.43.196 304.837 16.199 373 19 68.163 2.801 26.082-7.6 24-18l-40 1120H0Z%22 fill=%22url(%23a)%22%2F%3E%3Cpath d=%22M0 560c112.305 21.515 224.61 43.03 342 38 117.39-5.03 239.863-36.605 348-43 108.137-6.395 201.937 12.389 308 25 106.063 12.611 224.388 19.05 337 10s219.51-33.59 340-47c120.49-13.41 254.568-15.688 311-11 56.432 4.688 35.216 16.344 54 28l-40 840H0Z%22 fill=%22url(%23b)%22%2F%3E%3Cpath d=%22M0 840c106.893-21.015 213.785-42.03 320-40 106.215 2.03 211.751 27.108 329 40s246.21 13.598 361 2c114.79-11.598 215.408-35.5 313-30 97.592 5.5 192.16 40.404 323 55 130.84 14.596 297.954 8.885 363 1 65.046-7.885 28.023-17.942 31-28l-40 560H0Z%22 fill=%22url(%23c)%22%2F%3E%3Cpath d=%22M0 1120c107.944.554 215.888 1.109 324 7s216.393 17.119 328 7 226.541-41.584 343-36c116.459 5.584 234.443 48.218 340 52 105.557 3.782 198.689-31.29 324-44s282.803-3.06 345 3c62.197 6.06 29.098 8.53 36 11l-40 280H0Z%22 fill=%22url(%23d)%22%2F%3E%3C%2Fsvg%3E");
+}
+.noscroll::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+#polka{
+  background-color: #e5e5f7;
+opacity: 0.8;
+background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+background-size: 10px 10px;
+}
+
+.router3 { 
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg width=%222000%22 height=%221400%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3ClinearGradient id=%22a%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%237675f7%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%239897f9%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient id=%22b%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%23a4a8f7%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23babdf9%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient id=%22c%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%23efedff%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23f3f1ff%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Cpath fill=%22%236553ff%22 d=%22M0 0h2000v1400H0z%22%2F%3E%3Cpath d=%22M0 350c101.81-10.496 203.621-20.992 313-28 109.379-7.008 226.326-10.528 344-8 117.674 2.528 236.076 11.103 356 30s241.371 48.117 341 40c99.629-8.117 177.438-53.57 299-58 121.562-4.43 286.875 32.163 352 43 65.125 10.837 30.063-4.081 35-19l-40 1050H0Z%22 fill=%22url(%23a)%22%2F%3E%3Cpath d=%22M0 700c118.729 20.66 237.457 41.32 352 44 114.543 2.68 224.9-12.622 329-24s201.941-18.833 317-32c115.059-13.167 247.335-32.045 360-19 112.665 13.045 205.717 58.012 322 76 116.283 17.988 255.795 8.997 313-3 57.205-11.997 32.102-26.998 47-42l-40 700H0Z%22 fill=%22url(%23b)%22%2F%3E%3Cpath d=%22M0 1050c120.966-2.583 241.932-5.165 352 9 110.068 14.165 209.236 45.078 322 42 112.764-3.078 239.122-40.148 345-48 105.878-7.852 191.277 13.514 291 16 99.723 2.486 213.772-13.908 340-25 126.228-11.092 264.637-16.884 325-15 60.363 1.884 42.682 11.442 65 21l-40 350H0Z%22 fill=%22url(%23c)%22%2F%3E%3C%2Fsvg%3E");
+}
+
+
+
+.router2 { 
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg width=%222000%22 height=%221400%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3ClinearGradient id=%22a%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%23bfcdfe%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23cfd9fe%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient id=%22b%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%23e9f0fd%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23eef3fd%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient id=%22c%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%23eef1fb%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23f2f4fc%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient id=%22d%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%23c6d0fc%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23d4dbfc%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient id=%22e%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%23889eff%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23a5b6ff%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Cpath fill=%22%238198fd%22 d=%22M0 0h2000v1400H0z%22%2F%3E%3Cpath d=%22M0 233c90.431 9.13 180.862 18.262 279 17 98.138-1.262 203.983-12.916 299-21s179.206-12.597 271-8c91.794 4.597 191.192 18.304 290 19 98.808.696 197.025-11.62 290-18 92.975-6.38 180.707-6.823 275-4 94.293 2.823 195.146 8.911 336 15l-40 1167H0Z%22 fill=%22url(%23a)%22%2F%3E%3Cpath d=%22M0 466c98.194-1.277 196.388-2.554 289-1 92.612 1.554 179.642 5.94 274 3 94.358-2.94 196.043-13.208 294-11s192.184 16.89 288 17c95.816.11 193.22-14.355 288-19s186.937.53 281 4c94.063 3.47 190.031 5.235 326 7l-40 934H0Z%22 fill=%22url(%23b)%22%2F%3E%3Cpath d=%22M0 700c98.068 11.232 196.135 22.464 293 17 96.865-5.464 192.527-27.623 287-27 94.473.623 187.757 24.029 282 25 94.243.971 189.447-20.492 286-29s194.457-4.06 287 1 179.727 10.731 273 13 192.637 1.134 332 0l-40 700H0Z%22 fill=%22url(%23c)%22%2F%3E%3Cpath d=%22M0 933c95.498-.442 190.996-.884 285-3 94.004-2.116 186.514-5.908 280-4 93.486 1.908 187.948 9.514 285 8 97.052-1.514 196.694-12.148 293-12 96.306.148 189.275 11.078 285 12 95.725.922 194.207-8.165 290-10 95.793-1.835 188.896 3.583 322 9l-40 467H0Z%22 fill=%22url(%23d)%22%2F%3E%3Cpath d=%22M0 1166c90.44-8.776 180.879-17.553 275-14 94.121 3.553 191.925 19.435 291 21 99.075 1.565 199.42-11.186 293-9 93.58 2.186 180.392 19.307 278 19 97.608-.307 206.01-18.044 302-24 95.99-5.956 179.569-.13 271 3 91.431 3.13 190.716 3.565 330 4l-40 234H0Z%22 fill=%22url(%23e)%22%2F%3E%3C%2Fsvg%3E");
+}
+
+#polka2{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg width=%222000%22 height=%221400%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3ClinearGradient id=%22a%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%23bfcdfe%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23cfd9fe%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient id=%22b%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%23e9f0fd%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23eef3fd%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient id=%22c%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%23eef1fb%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23f2f4fc%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient id=%22d%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%23c6d0fc%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23d4dbfc%22%2F%3E%3C%2FlinearGradient%3E%3ClinearGradient id=%22e%22 gradientTransform=%22rotate(90)%22%3E%3Cstop offset=%225%25%22 stop-color=%22%23889eff%22%2F%3E%3Cstop offset=%2295%25%22 stop-color=%22%23a5b6ff%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Cpath fill=%22%238198fd%22 d=%22M0 0h2000v1400H0z%22%2F%3E%3Cpath d=%22M0 233c90.431 9.13 180.862 18.262 279 17 98.138-1.262 203.983-12.916 299-21s179.206-12.597 271-8c91.794 4.597 191.192 18.304 290 19 98.808.696 197.025-11.62 290-18 92.975-6.38 180.707-6.823 275-4 94.293 2.823 195.146 8.911 336 15l-40 1167H0Z%22 fill=%22url(%23a)%22%2F%3E%3Cpath d=%22M0 466c98.194-1.277 196.388-2.554 289-1 92.612 1.554 179.642 5.94 274 3 94.358-2.94 196.043-13.208 294-11s192.184 16.89 288 17c95.816.11 193.22-14.355 288-19s186.937.53 281 4c94.063 3.47 190.031 5.235 326 7l-40 934H0Z%22 fill=%22url(%23b)%22%2F%3E%3Cpath d=%22M0 700c98.068 11.232 196.135 22.464 293 17 96.865-5.464 192.527-27.623 287-27 94.473.623 187.757 24.029 282 25 94.243.971 189.447-20.492 286-29s194.457-4.06 287 1 179.727 10.731 273 13 192.637 1.134 332 0l-40 700H0Z%22 fill=%22url(%23c)%22%2F%3E%3Cpath d=%22M0 933c95.498-.442 190.996-.884 285-3 94.004-2.116 186.514-5.908 280-4 93.486 1.908 187.948 9.514 285 8 97.052-1.514 196.694-12.148 293-12 96.306.148 189.275 11.078 285 12 95.725.922 194.207-8.165 290-10 95.793-1.835 188.896 3.583 322 9l-40 467H0Z%22 fill=%22url(%23d)%22%2F%3E%3Cpath d=%22M0 1166c90.44-8.776 180.879-17.553 275-14 94.121 3.553 191.925 19.435 291 21 99.075 1.565 199.42-11.186 293-9 93.58 2.186 180.392 19.307 278 19 97.608-.307 206.01-18.044 302-24 95.99-5.956 179.569-.13 271 3 91.431 3.13 190.716 3.565 330 4l-40 234H0Z%22 fill=%22url(%23e)%22%2F%3E%3C%2Fsvg%3E");
+}
+
+#polka{
+  border-bottom: 2px solid #9595ff;
+  background-color: #e5e5f7;
+opacity: 0.8;
+background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+background-size: 10px 10px;
+}
+
+

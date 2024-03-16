@@ -1,0 +1,13 @@
+extends layout 
+block content 
+    h1= title
+    if partUser 
+     h2= partUser.username
+     p You are logged in
+    if(users.length === 0)
+        p No users
+    else
+    ul
+        each user in users
+            a(href="/users/" + user._id) 
+                li= user.username

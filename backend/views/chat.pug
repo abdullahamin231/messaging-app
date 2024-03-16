@@ -1,0 +1,26 @@
+extends layout
+
+block content
+    h1 #{user.username}
+    if !chat 
+        p You have no chats with this person! 
+    if yourMessages.length > 0
+        p All your Messages:
+        ul
+            each message in yourMessages
+                li #{message.content}
+                form(action=`/chats/${chat._id}/${message._id}/delete` method="POST")
+                    input(type="hidden" name="_method" value="DELETE")
+                    button(type="submit") Delete message
+
+    if otherMessages.length > 0
+        p Other Messages:
+        ul
+            each message in otherMessages
+                li #{message.content}
+    else 
+        p No Messages
+    div Send Message 
+    form(action='/chats/' + chat._id + '/submit' method="POST") 
+        input(type="text", name="message")
+        button(type="submit" value="Send") Send 

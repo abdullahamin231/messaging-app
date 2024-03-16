@@ -1,0 +1,15 @@
+extends layout 
+block content 
+    h1= user.username
+    p= user.email
+    p= user.password
+    if admin && admin.username === "admin"
+     form(action="/users/" + user._id + "/delete" method="POST")
+        input(type="submit" value="Delete")
+    
+    if user && admin.username != user.username
+        form(action='/chats/' + user._id + '/message', method='GET')
+            input(type='submit', value='Message this person')
+
+    p 
+     a(href="/users") All Usersf

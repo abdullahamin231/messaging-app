@@ -1,0 +1,10 @@
+extends layout 
+block content 
+    h1= title
+    if user
+        h1= user.username
+        p= user.email
+        p= user.age
+        form(action="/users/" + user._id + "/delete" method="POST")
+        input(type="submit" value="Delete")
+    
